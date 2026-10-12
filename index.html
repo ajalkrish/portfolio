@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of a web developer">
+  <title>My Portfolio | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home" class="logo">MyPortfolio.</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">WEB DEVELOPER IN TRAINING</p>
+      <h1>Building useful digital experiences.</h1>
+      <p>I create clean, responsive and user-friendly websites.</p>
+      <a class="button" href="#projects">Explore My Work</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Write a genuine introduction about yourself and your goals.</p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <article class="card">HTML5</article>
+        <article class="card">CSS3</article>
+        <article class="card">JavaScript</article>
+        <article class="card">Responsive Design</article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <article class="card">
+          <h3>TaskFlow</h3>
+          <p>A task management application.</p>
+        </article>
+        <article class="card">
+          <h3>ShopSphere</h3>
+          <p>An interactive shopping storefront.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="email">Your email</label>
+        <input id="email" type="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+        <button class="button" type="submit">Send Message</button>
+        <p id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 My Portfolio</p>
+  </footer>
+</body>
+</html>

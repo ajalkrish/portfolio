@@ -1,0 +1,142 @@
+
+:root {
+  --bg: #0b1220;
+  --panel: #121d30;
+  --text: #f4f7fb;
+  --muted: #a6b3c6;
+  --accent: #48dfc1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 8%;
+  border-bottom: 1px solid #243147;
+}
+
+.logo {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+section {
+  padding: 72px 8%;
+  scroll-margin-top: 20px;
+}
+
+.hero {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero h1 {
+  max-width: 750px;
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  line-height: 1.1;
+  margin: 12px 0;
+}
+
+.eyebrow,
+h2 {
+  color: var(--accent);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--accent);
+  color: #07141a;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.skills-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  padding: 22px;
+  background: var(--panel);
+  border: 1px solid #29374d;
+  border-radius: 14px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin: 8px 0 18px;
+  padding: 12px;
+  border: 1px solid #526078;
+  border-radius: 8px;
+}
+
+footer {
+  padding: 24px 8%;
+  color: var(--muted);
+  border-top: 1px solid #243147;
+}
+
+@media (max-width: 640px) {
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .skills-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 48px 6%;
+  }
+}
